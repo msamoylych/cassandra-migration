@@ -49,6 +49,7 @@ public class DatabaseTest {
         cassandra = new CassandraBuilder()
                 .version("3.11.12")
                 .addConfigProperty("enable_user_defined_functions", true)
+                .addJvmOptions("-Xms512m", "-Xmx1024m", "-Djava.awt.headless=true")
                 .build();
         cassandra.start();
     }
