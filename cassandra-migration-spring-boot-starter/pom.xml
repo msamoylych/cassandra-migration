@@ -20,7 +20,7 @@
     </description>
 
     <properties>
-        <spring.boot.version>2.7.18</spring.boot.version>
+        <spring.boot.version>4.0.2</spring.boot.version>
     </properties>
 
     <dependencies>
@@ -60,6 +60,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-cassandra</artifactId>
             <version>${spring.boot.version}</version>
         </dependency>
         <dependency>
